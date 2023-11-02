@@ -1,9 +1,12 @@
 package edu.eci.arsw.myrestaurant.beans.impl.colombia;
 
+import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Service;
 import edu.eci.arsw.myrestaurant.model.RestaurantProduct;
 import edu.eci.arsw.myrestaurant.beans.TaxesCalculator;
 
+@Service
+@Primary
 public class StandardTaxesCalculator implements TaxesCalculator {
 
 	@Override
